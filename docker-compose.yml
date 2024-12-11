@@ -1,0 +1,10 @@
+services:
+  mc_skyfactory:
+    image: glitchless/gli_mc_skyfactory:latest
+    restart: unless-stopped
+    ports:
+      - "25568:25565"
+    volumes:
+      - ./world:/minecraft/world
+      - ./local:/minecraft/local
+      - ./logs:/minecraft/logs
