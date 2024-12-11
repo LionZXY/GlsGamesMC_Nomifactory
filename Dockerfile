@@ -4,7 +4,7 @@ RUN apk add --no-cache wget bash unzip sed
 
 RUN wget https://media.forgecdn.net/files/5821/401/nomi-ceu-1.7.3-server.zip
 
-RUN mkdir -p /minecraft/ && unzip nomi-ceu-1.7.3-server.zip -d /minecraft/ && chmod +x /minecraft/Install.sh
+RUN mkdir -p /minecraft/ && unzip nomi-ceu-1.7.3-server.zip -d /minecraft/
 
 RUN chmod +x /minecraft/launch.sh
 
